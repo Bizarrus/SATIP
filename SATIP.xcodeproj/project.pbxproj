@@ -13,6 +13,9 @@
 		573A7CE92AE5302400EE01BD /* EPGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A7CE82AE5302400EE01BD /* EPGView.swift */; };
 		573A7CEB2AE5303E00EE01BD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A7CEA2AE5303E00EE01BD /* SettingsView.swift */; };
 		573A7CED2AE5306500EE01BD /* TVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A7CEC2AE5306500EE01BD /* TVView.swift */; };
+		573A7CF12AE536CE00EE01BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 573A7CF02AE536CE00EE01BD /* Settings.bundle */; };
+		573A7CF72AE53CBD00EE01BD /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A7CF62AE53CBD00EE01BD /* Channels.swift */; };
+		573A7CF92AE53D5900EE01BD /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A7CF82AE53D5900EE01BD /* Channel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		573A7CE82AE5302400EE01BD /* EPGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGView.swift; sourceTree = "<group>"; };
 		573A7CEA2AE5303E00EE01BD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		573A7CEC2AE5306500EE01BD /* TVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVView.swift; sourceTree = "<group>"; };
+		573A7CF02AE536CE00EE01BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		573A7CF62AE53CBD00EE01BD /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		573A7CF82AE53D5900EE01BD /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 		573A7CD62AE52F7300EE01BD /* SATIP */ = {
 			isa = PBXGroup;
 			children = (
+				573A7CF52AE53C9F00EE01BD /* Data */,
+				573A7CF22AE53B7500EE01BD /* IO */,
 				573A7CE72AE5301800EE01BD /* Views */,
 				573A7CD72AE52F7300EE01BD /* SATIPApp.swift */,
 				573A7CDD2AE52F7400EE01BD /* Assets.xcassets */,
 				573A7CDF2AE52F7400EE01BD /* Preview Content */,
+				573A7CF02AE536CE00EE01BD /* Settings.bundle */,
 			);
 			path = SATIP;
 			sourceTree = "<group>";
@@ -79,6 +88,22 @@
 				573A7CEC2AE5306500EE01BD /* TVView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		573A7CF22AE53B7500EE01BD /* IO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		573A7CF52AE53C9F00EE01BD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				573A7CF62AE53CBD00EE01BD /* Channels.swift */,
+				573A7CF82AE53D5900EE01BD /* Channel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				573A7CE12AE52F7400EE01BD /* Preview Assets.xcassets in Resources */,
+				573A7CF12AE536CE00EE01BD /* Settings.bundle in Resources */,
 				573A7CDE2AE52F7400EE01BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573A7CF92AE53D5900EE01BD /* Channel.swift in Sources */,
 				573A7CEB2AE5303E00EE01BD /* SettingsView.swift in Sources */,
 				573A7CD82AE52F7300EE01BD /* SATIPApp.swift in Sources */,
+				573A7CF72AE53CBD00EE01BD /* Channels.swift in Sources */,
 				573A7CE92AE5302400EE01BD /* EPGView.swift in Sources */,
 				573A7CED2AE5306500EE01BD /* TVView.swift in Sources */,
 			);
