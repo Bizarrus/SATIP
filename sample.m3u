@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF: -1 tvg-logo="https://www.welt.de/assets/bff-section/images/global/welt_brand.png", WELT
+https://broadcast.welt.personalstream.tv/v1/manifest/e237d596efe8bf8a700f8f91f1de8bbe03e0fe29/welttv-broadcast-prod/dc94f848-d716-4d99-b205-d97ef61256c1/7.m3u8
