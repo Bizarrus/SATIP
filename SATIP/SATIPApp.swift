@@ -1,32 +1,34 @@
-//
-//  SATIPApp.swift
-//  SATIP
-//
-//  Created by Flow on 21.10.23.
-//
-
 import SwiftUI
 import SwiftData
 
-@main
-struct SATIPApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+struct Root: View {
+    var body: some View {
+        NavigationStack {
+            TabView {
+                TVView().tabItem {
+                    Label("TV", systemImage: "tv")                }
+                
+                EPGView().tabItem {
+                    Label("EPG", systemImage: "rectangle.grid.1x2")
+                }
+                
+                SettingsView().tabItem {
+                    Label("Settings", systemImage: "gearshape.fill")
+                }
+            }
         }
-    }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
     }
 }
+
+@main
+struct SATIPApp: App {
+     var body: some Scene {
+        WindowGroup {
+            Root()
+        }
+    }
+}
+
+#Preview(body: {
+    Root()
+})

@@ -1,8 +1,12 @@
-//
-//  SettingsView.swift
-//  SATIP
-//
-//  Created by Flow on 21.10.23.
-//
+import SwiftUI
+import SwiftData
 
-import Foundation
+struct SettingsView: View {
+    var body: some View {
+        Text("Settings")
+    }
+}
+
+#Preview {
+    SettingsView()
+}

@@ -6,3 +6,7 @@ struct EPGView: View {
         Text("The Electronic Program Guide is currently not available.")
     }
 }
+
+#Preview {
+    EPGView()
+}

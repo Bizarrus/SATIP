@@ -1,8 +1,12 @@
-//
-//  TVView.swift
-//  SATIP
-//
-//  Created by Flow on 21.10.23.
-//
+import SwiftUI
+import SwiftData
 
-import Foundation
+struct TVView: View {
+    var body: some View {
+        Text("You do not have any TV Channels set at the moment.")
+    }
+}
+
+#Preview {
+    TVView()
+}
