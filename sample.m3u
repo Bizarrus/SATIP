@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF: -1 tvg-logo="https://TV/ARD.png" tvg-logo-small="TV/ARD.png" group-title="SD", Das Erste
+rtp://87.141.215.251@239.35.10.4:10000
